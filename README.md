@@ -1,21 +1,24 @@
 # test-duckdb-companylookup
 Lookup a UK company using duckdb
 
-## 1. Download all companies from companies house
+
+## 1. Install duckdb
+
+[https://duckdb.org/docs/installation/](https://duckdb.org/docs/installation/)
+
+Do this in a virtual environments to remain sane.
+
+```
+pip install duckdb
+```
+
+## 2. Download all companies from companies house
 
 [http://download.companieshouse.gov.uk/en_output.html](http://download.companieshouse.gov.uk/en_output.html)
 
 ```
 wget http://download.companieshouse.gov.uk/BasicCompanyDataAsOneFile-2022-09-01.zip
 unzip BasicCompanyDataAsOneFile-2022-09-01.zip
-```
-
-## 2. Install duckdb
-
-Do this in a virtual environments to remain sane.
-
-```
-pip install duckdb
 ```
 
 ## 3. Find a company
